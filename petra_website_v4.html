@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang='en'>
+      <head>
+        <meta charset='UTF-8'/>
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+           <title> Petra Travel Guide</title>
+    <style>
+h1{
+font-family:'Lora', serif;
+font-size: 1.85vw;
+font-style: normal;
+font-weight: normal;
+letter-spacing:normal;
+color: rgb(255,255,255);
+}
+h2 {
+font-family: "open sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-size: 1.85vw;
+font-style: normal;
+font-weight: normal;
+letter-spacing:normal;
+line-height: 1.85vw;
+text-transform: uppercase;
+color: rgb(0,0,0);
+}
+h3 {
+font-family:"Lora", serif;
+font-size: 2.25vw;
+font-style: normal;
+font-weight: normal;
+letter-spacing: normal;
+line-height: 2.3vw;
+text-transform: none;
+color: rgb(0,0,0);
+}
+h4 {
+font-family: "Noto Serif", "open sans", HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+font-size: 1.8vw;
+font-style: normal;
+font-weight: normal;
+line-height: 1.9vw;
+text-transform: none;
+color: rgb(0,0,0);
+}
+h5 {font-family:'Raleway', sans-serif;
+font-size: 1.35vw;
+font-style:normal;
+letter-spacing: inherit;
+line-height: 1.55vw;
+text-transform: none;
+color: rgb(0,0,0);
+font-weight:100;
+margin: 2vw;
+}
+h6{
+font-family:"Lora", serif;
+font-size: 1.15vw;
+font-style: normal;
+font-weight:100;
+letter-spacing: normal;
+line-height: 1.1vw;
+color: rgb(255,255,255);
+}
+p {font-family:'Raleway', sans-serif;
+font-size: 1.30vw;
+font-style:normal;
+letter-spacing: inherit;
+line-height: 1.55vw;
+text-transform: none;
+color: rgb(0,0,0);
+font-weight: 100;
+margin: 2vw;
+}
+    
+.mainbox{
+border: 1px solid rgb(255,255,255);
+background-color: rgb(255,255,255);
+color: rgb(255,255,255);
+max-width: 1000px;
+padding: 0px;
+margin: auto;
+}
+              
+.img-responsive{
+max-width: 100%;
+display: block;
+margin:auto;
+border-radius: 5px;
+}       
+.img-responsive2{
+max-width: 100%;
+max-height: 100%;
+display: block;
+margin: auto;
+border-radius: 5px;
+}
+/* Navigation Bar*/     
+.nav{
+  overflow: hidden;
+  background-color: rgb(218, 223, 227);
+  font-size: 1.5em;
+  padding: 3px;
+  margin: 0;
+  color: rgb(244, 244, 255);
+  text-align: left;
+  list-style: none;
+  top: 0; 
+  width: auto;
+  display: block;
+  position: sticky;
+display: flex;
+ justify-content: space-between;
+  }
+.nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+    padding-left:10px;
+    padding-right: 10px;
+  text-decoration: none;
+
+}
+
+a:cursor{
+background-color: rgb(231, 234, 238);
+color: rgb(255,255,255);
+}
+a:hover {
+  background: rgb(237, 218, 172);
+  color: rgb(255,255,255);
+}
+.main {
+  margin-top: 30px; 
+        }
+
+.footer{
+background-color: rgb(200, 205, 210);
+margin-bottom: 0px;
+padding: 10px;
+color: rgb(255, 255, 255);
+page-break-after: always;
+}
+
+.headline-box{
+    background-color: rgb(200, 205, 210);
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+        
+.column-container{
+border: 2px solid ;
+box-sizing: border-box;
+}
+.col_left{
+width:50%;
+border: 3px solid white;
+box-sizing: border-box;
+float: left;
+padding: 10px;
+}
+.col_right{
+width:50%;
+border: 3px solid white;
+box-sizing: border-box;
+float: right;
+padding: 10px;
+}
+.col_triplet{
+box-sizing: border-box;
+width: 33.33333333333333333%;
+border: 10px solid rgb(255,255,255);
+float:left;
+}
+        
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: rgb(208, 208, 208);
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family:'Lora', serif;
+    font-size: 1.85vw;
+font-style: normal;
+font-weight: normal;
+letter-spacing:normal;
+color: rgb(255,255,255);
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(237, 218, 172);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(115, 100, 87);
+color: rgb(255,255,255)
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+/* To colour stars for ratings*/
+.checked {
+  color: rgb(255, 239, 77);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+    float: left;
+    width: 10%;
+    max-height: 530px;
+}
+        
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+        
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+  height: 600px;
+    padding-bottom: 20px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 17px;
+  padding: 8px 12px;
+  position:absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width:700px)(max-height:530px)
+          </style>
+</head>
+
+<div class="mainbox">
+
+<div class="nav">
+
+  <a href="#home"><i class="fas fa-home" style="font-size:3vw; padding-top: 8px;" ></i></a>
+  <a href="#treasury"><h1 style="font-size:2vw;">The Treasury</h1></a>
+  <a href="#monastry"><h1 style="font-size:2vw;">The Monastery</h1></a>
+  <a href="#tombs"><h1 style="font-size:2vw;">The Tombs</h1></a>
+  <a href="#amphitheatre"><h1 style="font-size:2vw;">The Amphitheatre</h1></a>
+  <a href="#contact"><i class="fas fa-address-book" style="font-size:3vw; padding-top: 8px;"></i></a>
+  <a href="#map"><i class="fas fa-map-marked-alt" style="font-size:3vw; padding-top: 8px;"></i></a>
+
+    </div>
+
+    
+ <img id="home" class="img-responsive2" src="images/new_cover.jpg" alt="The Royal Tombs">
+
+
+<h4>Petra, a famous archaeological site in Jordan's southwestern desert, consists of a honeycomb of hand-hewn caves, temples, and tombs carved from sandstone in the high desert of Jordan some 2,000 years ago. </h4>
+    
+<div class="row">
+    <div class="col_left">
+    <img class="img-responsive hover-shadow cursor" src="images/camel_straight.jpg" onclick="openModal();currentSlide(1)" alt="Camel Looking Straight">
+        </div>
+
+    <div class="col_right">
+        <p>Hidden by time and shifting sand, Petra tells of a lost civilization. Little is known about the <b>Nabateans</b>—a nomadic desert people whose kingdom rose up from these cliffs and peaks, and whose incredible wealth grew from the lucrative incense trade. Raqmu, or Petra (as the Greeks knew it), grew into the Nabateans’ most prominent city, linking camel caravans between the Mediterranean and Arabian Seas, from Egypt to Syria and beyond to Greece. Control of water sources and an almost magic ability to vanish into the cleft rocks ensured the Nabateans remained <b>unconquered for centuries.</b></p>
+        </div>
+    </div>
+<div class="row">
+    <div class="col_left">
+        <p> The Romans arrived in <b>63 B.C.</b>, signaling a new era of massive expansion and grandiose construction, like the theater that sat more than 6,000 spectators, as well as some of the city’s most impressive facades. Carved into the rock face, the Treasury and the Monastery both have unmistakable Hellenistic features, with ornate Corinthian columns, bas-relief Amazons, and fanciful acroteria. Knowing that such architectural feats were achieved by carving from the top down makes it even more impressive.</p>
+        </div>
+    <div class="col_right">
+    <img class="img-responsive hover-shadow cursor" src="images/Donkey-Recovered.jpg" onclick="openModal();currentSlide(2)"  alt="Picture of donkey walking">
+        </div>
+</div>
+    
+<h3 class="headline-box" id="treasury">The Treasury</h3>
+
+<div class="column-container row">
+    
+<div class="col_left">
+<img class="img-responsive hover-shadow cursor" src="images/treasury.jpg" onclick="openModal();currentSlide(3)" alt= "The Treasury" >
+    </div>
+    <div class="col_right">
+        <h5>
+            <b>Al-Khazneh (Arabic: الخزنة; "The Treasury")</b> is one of the most elaborate temples in Petra, a city of the Nabatean Kingdom inhabited by the Arabs in ancient times. As with most of the other buildings in this ancient town, including the Monastery (Arabic: Ad Deir), this structure was carved out of a sandstone rock face.<br><br>
+                The structure is believed to have been the mausoleum of the <b>Nabatean King Aretas IV</b> in the 1st century AD. It is one of the most popular tourist attractions in both Jordan and the region. It became to be known as <b>"Al-Khazneh"</b>, or The Treasury, in the early 19th century by the area's Bedouins as they had believed it contained treasures.<br><br> The Treasury’s façade (24.9 meters wide x 38.77 meters high) most clearly embodies the Hellenistic style and reflects the influence of <b>Alexandria</b>, the greatest city in the Eastern Mediterranean at this time.</h5>
+    </div></div>
+    <div class="column-container row">
+    <div class="col_left">
+<img class="img-responsive hover-shadow cursor" src="images/donkey.jpg" onclick="openModal();currentSlide(4)" alt= "Donkey">
+    </div>
+
+    <div class="col_right">
+<img class="img-responsive hover-shadow cursor" src="images/siq.jpg" onclick="openModal();currentSlide(5)" alt= "The Siq">
+        </div></div>
+
+  
+
+
+<h3 class="headline-box" id="monastry">The Monastery</h3>
+    
+<div class="column-container">
+<div class="col_left row">
+<img class="img-responsive hover-shadow cursor" src="images/monastry.jpg" onclick="openModal();currentSlide(6)" alt="The Monastry">
+    </div>
+<div class="col_right row">
+<img class="img-responsive hover-shadow cursor" src="images/markey.jpg" onclick="openModal();currentSlide(7)" alt="The Market">
+    </div>
+    
+<div class="row"><p>The hike to the Monastery has visitors climbing over 800 steps for a solid 20 minutes or more of hiking. It is an almost entirely uphill journey. Along the way visitors pass numerous stalls, worked by women, selling scarves, souvenirs, and jewelry. 
+    
+    <b>Ad Deir ("The Monastery"; Arabic: الدير )</b>, also spelled ad-Dayr and el-Deir, is a monumental building carved out of rock in the ancient Jordanian city of Petra. The Deir was probably carved out of the rock in the mid-first century CE.<br><br>
+
+Arguably one of the most iconic monuments in the Petra Archaeological Park, the Monastery is located high in the hills northwest of the Petra city center. It is the <b>second most commonly visited monument in Petra</b>, after the Khazneh or "Treasury".
+
+The huge facade, the inner chamber and the other structures next to it or in the wider area around the Deir probably originally served a complex religious purpose, and was possibly repurposed as a church in the Byzantine period.</p>
+</div>
+    
+    </div>
+
+<h3 class="headline-box" id="tombs">The Tombs</h3>
+
+<div class="column-container">
+<div class="row">
+    <p>Here are tombs and houses built into the sandstone mountains by the Nabataeans 2000 years ago. Overlooking the center of Petra rise majestically the so-called <b>"Royal Tombs,"</b> a series of large mausoleums with impressive facades hewn from the western slope of the Jabal al-Khubtha rock massif.</p>
+    </div>
+<div class="col_triplet">
+<img class="img-responsive2 hover-shadow cursor" src="images/tombs.jpg" onclick="openModal();currentSlide(8)" alt="The Tombs">
+</div>
+
+<div class="col_triplet">
+<img class="img-responsive2 hover-shadow cursor" src="images/build.jpg" onclick="openModal();currentSlide(9)" alt="Picture of the Tombs">
+</div>
+<div class="col_triplet">
+<img class="img-responsive2 hover-shadow cursor" src="images/walking.jpg" onclick="openModal();currentSlide(10)" alt="Camel walking towards Tombs">
+    </div>
+
+
+<div class="row">
+
+    <p>It is not possible to associate them to particular Nabataean rulers, due to the lack archaeological evidence. But recent research seems to confirm their royal context. Surveys of the North-East Petra Project (NEPP) on a hill in front of al-Khubtha, postulate the area between the Wadi Musa and Wadi Mataha as the royal quarters of the Nabataean capital, where the monumental Palace Tomb could have served as <b>"the tomb or heroon of the kings of Petra"</b></p></div></div>
+
+<div class="row">
+<h3 class="headline-box" id="amphitheatre">The Amphitheatre</h3>
+<div class="col_left">
+<img class="img-responsive hover-shadow cursor" src="images/ampitheatre.jpg" onclick="openModal();currentSlide(1)"  alt="The Ampitheatre">
+    </div>
+    <div class="col_right">
+<h5>
+    Carved into the side of the mountain at the foot of the High Place of Sacrifice, the theatre consists of three rows of seats separated by passageways. Seven stairways ascend the auditorium and it can accommodate 4000 spectators. the monument was carved in the mountainside during the reign of <b>King Aretas IV</b> (4BC-AD27) the Romans rebuilt the stage back wall.
+    </h5></div></div>
+    
+<h3 class="headline-box row" id="contact">Contacts</h3>
+<div class="row">  
+<div class="tab">
+  <button class="tablinks h1" onclick="openCity(event, 'Accomodation')">Accomodation</button>
+  <button class="tablinks h1" onclick="openCity(event, 'tour-companies')">Tour Companies</button>
+  <button class="tablinks h1" onclick="openCity(event, 'Restaurants')">Restaurants</button>
+</div>
+
+<div id="Accomodation" class="tabcontent">
+<div class="row">
+<div class="col_left">
+<h5>Hyatt Zaman Hotel</h5> 
+<p><i class="fas fa-phone-alt"></i>  032150111 / 032150101</p>
+<p><i class="fas fa-envelope"></i> www.hyattzaman.com</p>
+</div>
+<div class="col_right">
+<img class="img-responsive" src="images/Hyatt-Zaman-Hotel.jpeg" alt="The Hyatt Zaman Hotel">
+</div>        
+</div>
+</div>
+    
+
+<div id="tour-companies" class="tabcontent">
+<div class="row">
+<div class="col_left">
+<h5>Go Jordan Travel and Tourism</h5>
+<p><i class="fas fa-phone-alt"></i>  +962 7 9558 2783</p>
+<p><i class="fas fa-envelope"></i> https://www.gojordantours.com/</p>
+</div>
+<div class="col_right">
+<img class="img-responsive" src="images/Go-Jordan-Travel-and-Tourism.jpeg" alt="Go Jordan Travel and Tourism">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col_left">
+<h5>Petra Eco Tours</h5> 
+<p><i class="fas fa-phone-alt"></i> 00962796904646</p>
+<p><i class="fas fa-envelope"></i> https://www.petraecotours.com/</p>
+    </div>
+    <div class="col_right">
+<img class="img-responsive" src="images/Petra-eco-tours.jpeg" alt="Petra Eco Tours">
+    </div>
+    </div>
+    </div>
+
+    
+
+<div id="Restaurants" class="tabcontent">
+<div class="row">
+ <div class="col_left">
+<h5>Beit Al-Barakah Restaurant</h5>
+<p><i class="fas fa-utensils"></i> Middle Eastern</p>
+<p><i class="fas fa-phone-alt"></i>+962 3 215 6800</p>
+<p><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span></p>
+    </div>
+     <div class="col_right">
+<img class="img-responsive" src="images/beit-al-barakh.jpg" alt="Beit Al-Barakah Restaurant">
+    </div>
+    </div>
+<div class="row">
+<div class="col_left">
+<h5>Reem Beladi Restaurant</h5>
+<p><i class="fas fa-utensils"></i> Middle Eastern</p>
+<p><i class="fas fa-phone-alt"></i>+962 7 7731 2455</p>
+<p><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span></p>
+</div>
+<div class="col_right">
+<img class="img-responsive" src="images/Reem-Beladi-Restaurant.jpg" alt="Reem Beladi Restaurant">
+ </div>
+</div>
+<div class="row">
+<div class="col_left"> 
+<h5>Bahia Rooftop</h5>
+<p><i class="fas fa-utensils"></i> Italian</p>
+<p><i class="fas fa-phone-alt"></i>+962 7 7978 7899</p>
+<p><span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span></p>
+    </div>
+     <div class="col_right">
+<img class="img-responsive" src="images/Bahia-rooftop.jpg" alt="Bahia Rooftop">
+    </div>   
+</div>
+    </div>
+       </div>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+    <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 /10 </div>
+      <img src="images/camel_straight.jpg"  style="display: block; margin:auto; height: 90%;" alt="Camel looking straight ahead.">
+        <h6 class="caption-container">Camel looking straight</h6>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 /10 </div>
+      <img src="images/Donkey-Recovered.jpg" style="display: block; margin:auto; height: 90%;" alt="Picture of donkey walking towards the tombs.">
+        <h6 class="caption-container">Donkey walking towards tombs on market road.</h6>
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 /10 </div>
+      <img src="images/treasury.jpg" style="display: block; margin:auto; height: 90%;" alt="The Treasury">
+        <h6 class="caption-container">Al-Khazneh (Arabic: الخزنة; "The Treasury") is one of the most elaborate temples in Petra.</h6>
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 /10 </div>
+      <img src="images/donkey.jpg" style="display: block; margin:auto; height: 90%;" alt="Donkey standing by the side of the road.">
+        <h6 class="caption-container">Donkey waiting by the tombs.</h6>
+    </div>
+      
+      <div class="mySlides">
+      <div class="numbertext">5 /10 </div>
+      <img src="images/monastry.jpg" style="display: block; margin:auto; height: 90%;" alt="Monastery">
+          <h6 class="caption-container">Ad Deir ("The Monastery"; Arabic: الدير ), is a monumental building carved out of rock in the ancient Jordanian city of Petra.</h6>
+    </div>
+      
+      <div class="mySlides">
+      <div class="numbertext">6 /10 </div>
+      <img src="images/markey.jpg" style="display: block; margin:auto; height: 90%;" alt="Market">
+          <h6 class="caption-container">The market hosts numerous stalls, worked by women, selling scarves, souvenirs, and jewelry. </h6>
+      </div>
+          
+    <div class="mySlides">
+      <div class="numbertext">7 /10 </div>
+      <img src="images/tombs.jpg" style="display: block; margin:auto; height: 90%; max-width: 100%;" alt="Royal Tombs">
+        <h6 class="caption-container">A series of large mausoleums with impressive facades hewn from the western slope of the Jabal al-Khubtha rock massif.</h6>
+    </div>
+          
+     <div class="mySlides">
+      <div class="numbertext">8 /10 </div>
+      <img src="images/build.jpg" style="display: block; margin:auto; height: 90%; max-width: 100%;" alt="Royal Tombs">
+         <h6 class="caption-container">A series of large mausoleums with impressive facades hewn from the western slope of the Jabal al-Khubtha rock massif.</h6>
+      </div>
+         
+     <div class="mySlides">
+      <div class="numbertext">9 /10 </div>
+      <img src="images/walking.jpg" style="display: block; margin:auto; height: 90%; max-width: 100%;" alt="Tombs">
+         <h6 class="caption-container">A series of large mausoleums with impressive facades hewn from the western slope of the Jabal al-Khubtha rock massif.</h6>
+      </div>
+        
+    <div class="mySlides">
+      <div class="numbertext">10 /10 </div>
+      <img src="images/ampitheatre.jpg" style="display: block; margin:auto; height: 90%; max-width: 100%;" alt="Amphitheatre">
+        <h6 class="caption-container">Petra Theater (Arabic: مسرح البتراء) is a first century AD Nabataean theatre situated 600 m from the centre of Petra.</h6>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+ <!--   <div class="caption-container">
+      <p id="caption"></p>
+    </div> -->
+
+
+   <div class="column">
+      <img class="demo cursor" src="images/camel_straight.jpg"  style="width:50%" onclick="currentSlide(1)" alt="Camel looking straight ahead">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Donkey-Recovered.jpg"  style="width:50%" onclick="currentSlide(2)" alt="Donkey walking towards Tombs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/treasury.jpg"  style="width:50%" onclick="currentSlide(3)" alt="The Treasury">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/donkey.jpg"  style="width:50%" onclick="currentSlide(4)" alt="Donkey standing on the side of the road.">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/monastry.jpg" style="width:50%" onclick="currentSlide(5)" alt="Monastery">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/markey.jpg" style="width:50%" onclick="currentSlide(6)" alt="Market">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/tombs.jpg"  style="width:50%" onclick="currentSlide(7)" alt="The Royal Tombs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/build.jpg" style="width:50%" onclick="currentSlide(8)" alt="The Royal Tombs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/walking.jpg"  style="width:50%" onclick="currentSlide(9)" alt="The Royal Tombs">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/ampitheatre.jpg" style="width:50%" onclick="currentSlide(10)" alt="The Amphitheatre">
+    </div>
+  </div>
+          </div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<h3 class="headline-box" id="map">Map</h3>
+
+<iframe  src="https://www.google.com/maps/d/u/0/embed?mid=18-XpdCy9kONvjEmjIKl2aBIbJ67bEEOm" width="100%" height="500"></iframe>
+
+    
+<div class="footer" style="font-size: 1.5vw">&copy; Eleanor Berry</div>
+    </div>
+</html>
+
+
